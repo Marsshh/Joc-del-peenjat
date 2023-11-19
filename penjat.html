@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Joc del Penjat</title>
-    <link href="penjat.css">
-</head>
-<body>
-    <button onclick="mostrarMenu()">Iniciar una partida</button>
-    <button>Estadístiques</button>
-   
-    <div id="abecedari"></div>
-    
-    <script src="penjat.js"></script>
-</body>
-</html>
+    <link rel="stylesheet" href="penjat.css" />
+  </head>
+  <body>
+    <div class="botons-principals">
+      <button onclick="IniciarPartida()">Iniciar una partida</button>
+      <button onclick=" mostrarEstadisticas()">Estadístiques</button>
+      <button onclick="reiniciarestadisticas()">Reiniciar estadístiques</button>
+      <button onclick=" sortir()">Sortir</button>
+    </div>
 
+    <div id="abecedari"></div>
+
+    <div class="output">
+      <br />
+      <div id="jocPenjat"></div>
+      <img src="" id="imatgePenjat" />
+    </div>
+
+    <div id="lletresUtilitzades"></div>
+
+    <script src="penjat.js"></script>
+  </body>
+</html>
